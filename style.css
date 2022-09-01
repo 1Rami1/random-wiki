@@ -15,7 +15,7 @@ body{
     display: flex;
 }
 .wrapper{
-  height: 200px;
+  height: 220px;
   max-width: 410px;
   background: #fff;
   border-radius: 7px;
@@ -51,7 +51,7 @@ header h1{
 }
 @media (max-width: 430px){
   .wrapper{
-    height: 255px;
+    height: 220px;
     padding: 16px 20px;
   }
   .wrapper.active{

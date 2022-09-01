@@ -10,13 +10,19 @@
     <meta name="author" content="Rami">
 </head>
 <body>
+  <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <div class="wrapper">
         <header>
           <h1>Random Wikipedia Article</h1>
         </header>
         <div class="form">
-          <button onclick="window.open('https://en.wikipedia.org/wiki/Special:Random','_blank')">Go to random article</button>
+          <button onclick="openWike()">Go to random article</button>
+          <h2 style="font-size: 21px;font-weight: 500;">wiki language</h2>
+          <select name="language" id="languageselect">
+            <option value="en">English</option>
+            <option value="ar">Arabic</option>
+          </select>
         </div>
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5ZJT0Q4LQ"></script>
