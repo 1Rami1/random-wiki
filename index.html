@@ -27,10 +27,17 @@
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5ZJT0Q4LQ"></script>
         <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-B5ZJT0Q4LQ');
+          if(window.location.href == "https://1rami1.github.io/Random-Wikipedia-Article/"){
+            window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+           console.log("is website");
+          gtag('config', 'G-B5ZJT0Q4LQ');
+        } 
+      function openWike(){
+    
+        wikeurl = "https://"+ document.getElementById("languageselect").value +".wikipedia.org/wiki/Special:Random";
+        window.open(wikeurl,'_blank');
+      }
       </script>
 </html>
