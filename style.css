@@ -15,7 +15,7 @@ body{
     display: flex;
 }
 .wrapper{
-  height: 220px;
+  height: 210px;
   max-width: 410px;
   background: #fff;
   border-radius: 7px;

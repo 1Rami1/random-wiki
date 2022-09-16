@@ -8,35 +8,34 @@
     <meta name="description" content="its website to get you random wikipedia article">
     <meta name="keywords" content="red, wikipedia, random wikipedia article, wikipedia articles">
     <meta name="author" content="Rami">
+    <link rel="shortcut icon" href="shortcut icon.png">
+    <link rel="icon" href="wiki.png">
 </head>
 <body>
-  <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <div class="wrapper">
         <header>
           <h1>Random Wikipedia Article</h1>
         </header>
         <div class="form">
-          <button onclick="openWike()">Go to random article</button>
+          <button onclick="FindWiki()">Search wiki</button>
           <h2 style="font-size: 21px;font-weight: 500;">wiki language</h2>
           <select name="language" id="languageselect">
             <option value="en">English</option>
             <option value="ar">Arabic</option>
+            <option value="ceb">Cebuano</option>
+            <option value="de">German</option>
+            <option value="sv">Swedish</option>
+            <option value="fr">French</option>
+            <option value="nl">Dutch</option>
+            <option value="ru">Russian</option>
+            <option value="es">Spanish</option>
+            <option value="it">Italian</option>
+            <option value="pl">Polish</option>
+            <option value="arz">Egyptian</option>
           </select>
         </div>
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-B5ZJT0Q4LQ"></script>
-        <script>
-          if(window.location.href == "https://1rami1.github.io/Random-Wikipedia-Article/"){
-            window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-B5ZJT0Q4LQ');
-        } 
-      function openWike(){
-    
-        wikeurl = "https://"+ document.getElementById("languageselect").value +".wikipedia.org/wiki/Special:Random";
-        window.open(wikeurl,'_blank');
-      }
-      </script>
+        <script src="script.js"></script>
 </html>
